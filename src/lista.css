@@ -1,0 +1,14 @@
+.produtosgerais{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.nome{
+        width: 20%;
+        border: 5%;
+    border-color: blueviolet;
+}
+.sel{
+    
+    margin: 15%;
+}
