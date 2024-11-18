@@ -1,4 +1,13 @@
+import Enois from "./Loading"
+
 export default function Lista({produtos}){
+  if(produtos.length === 0){
+  return(
+    <div className="proto">
+      <Enois/>
+    </div>
+  )
+  }
     return (
         <>
           <h1>Lista de Produtos</h1>

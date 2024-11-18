@@ -17,7 +17,7 @@ export default function App() {
         alert("A conexão com a API esta errada!");
     }
 }
-    
+ 
     receberListaProdutos();
   }, []);
 
