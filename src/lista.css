@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(89, 46, 129);
+    background-color:#E38E49;
    text-align: center;
 }
 .produtosgerais{
@@ -21,7 +21,7 @@ body{
     margin: 25px;
     width: 20%;
     border: 5px solid;
-    border-color: rgb(0, 0, 1);
+    border-color: #D4EBF8;
 }
 
 .imagen{

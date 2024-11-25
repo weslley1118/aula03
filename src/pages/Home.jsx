@@ -21,7 +21,34 @@ export default function App() {
     receberListaProdutos();
   }, []);
 
+  const orderAz = () =>{
+    const listaAux = [...Lista].sort((a, b)=>a.title.localeCompare(b.title));
+  setLista(listaAux);
+
+  }
+
+  const orderZa = () =>{
+    const listaAux = [...Lista].sort((a, b)=> b.title.localeCompare(a.title));
+    setLista(listaAux)
+  }
+
+  const ordermaio = ()=>{
+    const listaAux = [...Lista].sort((menor,maior)=>maior.price-(menor.price));
+    setLista(listaAux)
+  }
+
+  const ordermeno= ()=>{
+    const listaAux = [...Lista].sort((maior,menor)=>maior.price-(menor.price));
+    setLista(listaAux)
+  }
   return (
+<>
+    <button onClick={()=> orderAz()}>Az</button>
+    <button onClick={()=> orderZa()}>Za</button>
+    <button onClick={()=> ordermaio()}>maior</button>
+    <button onClick={()=> ordermeno()}>menor</button>
     <Teste produtos={Lista}/>
-  );
+
+</>  
+);
 }
